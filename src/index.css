@@ -88,16 +88,15 @@ body {
   border-color: #4d4d4d;
 }
 .btn__danger {
-  color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2130;
+  background-color: #fff000;
+  border-color: #000000;
 }
 .btn__filter {
   border-color: lightgrey;
 }
 .btn__primary {
   color: #fff;
-  background-color: #000;
+  background-color: #338eef;
 }
 .btn-group {
   display: flex;
@@ -270,7 +269,7 @@ body {
 }
 .c-cb > input[type="checkbox"]:focus + label::before {
   border-width: 4px;
-  outline: 3px dashed #228bec;
+  outline: 3px dashed #338eef;
 }
 .c-cb > label::after {
   box-sizing: content-box;
