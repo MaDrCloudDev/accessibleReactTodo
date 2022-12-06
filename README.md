@@ -1,2 +1,2 @@
-# [accessibleReactTodo](https://accessiblereacttodo.madr.io/p)
-An accessible React to-do app I built using React hooks, state management, & DOM manipulation
+# [accessibleReactTodo](https://accessiblereacttodo.MaDr.io)
+An accessible React todo app I built using React hooks, state management, & DOM manipulation
