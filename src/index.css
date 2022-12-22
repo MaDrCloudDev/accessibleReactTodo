@@ -69,51 +69,68 @@ body {
 }
 /*END RESETS*/
 /* GLOBAL STYLES */
-.form-group > input[type="text"] {
-  display: inline-block;
-  margin-top: 0.4rem;
-}
+
 .btn {
   padding: 0.8rem 1rem 0.7rem;
   border: 0.2rem solid white;
   cursor: pointer;
-  text-transform: capitalize;
 }
+
+.btn:hover {
+  border: 0.2rem solid #fff000;
+  background-color: #338eef;
+  color: black;
+}
+
 .btn.toggle-btn {
   border-width: 1px;
   border-color: white;
 }
+
 .btn.toggle-btn[aria-pressed="true"] {
   text-decoration: underline;
   border-color: white;
+  font-weight: 700;
 }
+
 .btn__danger {
   background-color: #fff000;
   border-color: white;
   color: black;
 }
+
+.btn__danger:hover {
+  background-color: #b71c1c;
+  border-color: #fff000;
+  color: white;
+}
+
 .btn__filter {
   border-color: white;
 }
+
 .btn__primary {
-  color: #fff;
+  color: black;
   background-color: #338eef;
 }
+
+.btn__primary:hover {
+  color: white;
+  background-color: green;
+}
+
 .btn-group {
   display: flex;
-  justify-content: space-between;
 }
+
 .btn-group > * {
   flex: 1 1 49%;
 }
+
 .btn-group > * + * {
   margin-left: 0.8rem;
 }
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: center;
-}
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -123,16 +140,15 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
-[class*="stack"] > * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 .stack-small > * + * {
   margin-top: 1.25rem;
 }
+
 .stack-large > * + * {
   margin-top: 2.5rem;
 }
+
 @media screen and (min-width: 550px) {
   .stack-small > * + * {
     margin-top: 1.4rem;
@@ -141,37 +157,41 @@ body {
     margin-top: 2.8rem;
   }
 }
+
 .stack-exception {
   margin-top: 1.2rem;
 }
+
 /* END GLOBAL STYLES */
 .todoapp {
   background: black;
   margin: 2rem 0 4rem 0;
-  padding: 1rem;
-  position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
 }
+
 @media screen and (min-width: 550px) {
   .todoapp {
     padding: 4rem;
   }
 }
+
 .todoapp > * {
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
 }
+
 .todoapp > form {
   max-width: 100%;
 }
+
 .todoapp > h1 {
-  display: block;
   max-width: 100%;
   text-align: center;
   margin: 0;
   margin-bottom: 1rem;
 }
+
 .label__lg {
   line-height: 1.01567;
   font-weight: 300;
@@ -179,49 +199,45 @@ body {
   margin-bottom: 1rem;
   text-align: center;
 }
+
 .input__lg {
   padding: 2rem;
   border: 2px solid white;
 }
+
 .input__lg:focus {
   border-color: white;
   box-shadow: inset 0 0 0 2px;
 }
+
 [class*="__lg"] {
   display: inline-block;
   width: 100%;
-  font-size: 1.9rem;
 }
+
 [class*="__lg"]:not(:last-child) {
   margin-bottom: 1rem;
 }
+
 @media screen and (min-width: 620px) {
   [class*="__lg"] {
     font-size: 2.4rem;
   }
 }
-.filters {
-  width: 100%;
-  margin: unset auto;
-}
+
 /* Todo item styles */
-.todo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.todo > * {
-  flex: 0 0 100%;
-}
+
 .todo-text {
   width: 100%;
   min-height: 4.4rem;
   padding: 0.4rem 0.8rem;
   border: 2px solid white;
 }
+
 .todo-text:focus {
   box-shadow: inset 0 0 0 2px;
 }
+
 /* CHECKBOX STYLES */
 .c-cb {
   box-sizing: border-box;
@@ -236,6 +252,7 @@ body {
   padding-left: 40px;
   clear: left;
 }
+
 .c-cb > label::before,
 .c-cb > input[type="checkbox"] {
   box-sizing: border-box;
@@ -244,6 +261,7 @@ body {
   width: 44px;
   height: 44px;
 }
+
 .c-cb > input[type="checkbox"] {
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
@@ -252,6 +270,7 @@ body {
   margin: 0;
   opacity: 0;
 }
+
 .c-cb > label {
   font-size: inherit;
   font-family: inherit;
@@ -262,16 +281,19 @@ body {
   cursor: pointer;
   touch-action: manipulation;
 }
+
 .c-cb > label::before {
   content: "";
   position: absolute;
   border: 2px solid currentcolor;
   background: transparent;
 }
+
 .c-cb > input[type="checkbox"]:focus + label::before {
   border-width: 4px;
   outline: 3px solid #338eef;
 }
+
 .c-cb > label::after {
   box-sizing: content-box;
   content: "";
@@ -287,6 +309,7 @@ body {
   opacity: 0;
   background: transparent;
 }
+
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
